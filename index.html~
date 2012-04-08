@@ -19,9 +19,8 @@ and can navigate anywhere within.
 
     <!-- these first few linked files in each page are for jQuery Mobile-->
     <link rel="stylesheet" href="jquery.mobile-1.0.1.min.css">
-    <script src="jquery-1.6.4.min.js"></script>
     <script src="jquery.mobile-1.0.1.min.js"></script>
-
+    <script src="jquery-1.6.4.min.js"></script>
 
     <!--then, I add my own css and js files (where applicable)-->
     <link rel="stylesheet" href="maxStyle.css">
