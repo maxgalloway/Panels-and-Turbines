@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<!-- a note to improve readability: all empty spans in the result
+portion are filled in dynamically by a function in script.js -->
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Panels and Turbines</title> 
+
+    <link rel="stylesheet" 
+      href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css">
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script 
+       src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js">
+    </script>
+    <link rel="stylesheet" href="../maxStyle.css">
+    <script src="../common.js"></script>
+    <script src="script.js"></script>
+  </head> 
+  <body>
+   <!-- PART FOUR -->
+
+    <div id="part4" data-role="page" data-theme="b">
+      <div data-role="header" data-theme="b">
+        <p class="label">Part 4</p>
+        <div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="../part3/" data-rel="back" data-transition="slide"
+                   rel="external">Back</a></li>
+            <li><a href="../" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+      </div><!-- /header -->
+
+      <div data-role="content" data-theme="b">
+      
+	<p>
+	    (4) How much electrical energy should you expect to get from
+	      solar panels?
+	    </p>
+
+	<p>
+	    <label for="fourthValue1">How many panels are going to be
+	          put up?</label>
+
+	      <input type="number" id="fourthValue1" class="part4">
+	      </p>
+
+	<p>
+	    <label for="fourthValue2">
+	          What is the wattage (in W) of each panel?
+		    </label>
+
+	      <input type="number" id="fourthValue2" class="part4">
+	      </p>
+
+	<p>
+	    <label for="fourthValue3">
+	          How many hours of "full sun" (average) are received at the
+		      location daily?
+		    </label>
+	      <input type="number" id="fourthValue3" class="part4">
+
+	        <a href="http://www.windsun.com/Photovolaic_Systems/Solar_maps.htm#Map1" rel="external">click here for help determining this value</a>
+		  
+		  Note: One "full sun" hour is equal to 1 kWh/m<sup>2</sup>
+		  per day.
+		</p>
+	
+	<p><a id="submit4" data-transition="pop" href="../errors/error2.html"
+	            data-rel="dialog" data-role="button" data-them="b">
+	        Calculate!</a></p>
+	
+      </div><!-- end of content -->
+      
+      <div data-role="footer" data-theme="b">
+        <div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="../result3/" data-rel="back" data-transition="slide"
+                   rel="external">Back</a></li>
+            <li><a href="../" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+	<p  class="label">by Peter Schwartzman and MGC</p>
+      </div>
+      
+    </div><!-- end of page -->
+    
+    
+    <div id="results4" data-role="page" data-theme="b">
+      <div data-role="header" data-theme="b">
+        <p class="label">Part 4 Results</p>
+        <div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="#part4" data-rel="back" data-transition="slide">
+                Back</a></li>
+            <li><a href="../" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+      </div><!-- /header -->
+      
+      <div data-role="content" data-theme="b">
+
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	    <li># of PV Panels</li>
+	      <li><span id="4a"></span></li>
+	      </ul>
+	
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	    <li>Wattage (W)</li>
+	      <li><span id="4b"></span></li>
+	      </ul>
+	
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	    <li>Full Sun Hours</li>
+	      <li><span id="4c"></span></li>
+	      </ul>
+	
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	    <li>Energy Produced (kWh)</li>
+	      <li><span id="4d"></span></li>
+	      </ul>
+	
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	    <li># of Homes</li>
+	      <li><span id="4e"></span></li>
+	      </ul>
+	
+	<p>
+	  So, this number (<span id="debrief4a"></span>)
+	  of <span id="debrief4b"></span>w panels, each
+	  receiving <span id="debrief4c"></span> hours (full sun)
+	  daily, should produce <span id="debrief4d"></span> kWh of
+	  energy each year.
+	</p>
+
+	<p>
+	  For comparison, the average American
+	  household uses 10,900 kWh of electrical energy each year. So
+	  these panel(s) would be producing the equivalent of
+	  <span id="debrief4e"></span> households' electricity needs.
+	</p>
+
+      <p><a data-role="button" rel="external" href="../part5/">Next</a></p>
+
+      </div><!-- end of content -->
+
+      <div data-role="footer" data-theme="b">
+        <div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="#part4" data-rel="back" data-transition="slide">
+                Back</a></li>
+            <li><a href="../" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+	<p  class="label">by Peter Schwartzman and MGC</p>
+      </
+  </body>
+</html>

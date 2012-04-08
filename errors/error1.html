@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<!-- 
+This error is triggered only in the first part, and has a slightly
+different error text than the other error. In part1, the user need
+only fill in one field. In all other parts, all fields must be filled
+in.
+-->
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Panels and Turbines</title> 
+
+    <link rel="stylesheet" 
+      href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css">
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script 
+       src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js">
+    </script>
+    <link rel="stylesheet" href="../maxStyle.css">
+  </head> 
+  <body>
+
+  <!-- ERROR 1 -->
+  <div data-role="page" id="error1" data-theme="e">
+    <div data-role="header">
+      <p class="label">Error!</p>
+    </div>
+    <div data-role="content" data-theme="e">
+      <p>
+	There was an error processing your input. Make sure that you
+	have an answer only for the question above the button you
+	pressed. Make sure your answer is a number. Numbers can only
+	contain digits or decimals. (e.g. no $ or ,)
+      </p>
+    </div><!-- end content -->
+  </div><!-- end page-->
+  <!-- /ERROR 1-->
+
+  </body>
+</html>

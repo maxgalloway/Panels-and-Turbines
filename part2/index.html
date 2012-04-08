@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<!-- a note to improve readability: all empty spans in the result
+portion are filled in dynamically by a function in script.js -->
+
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Panels and Turbines</title> 
+
+    <link rel="stylesheet" 
+      href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css">
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script 
+       src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js">
+    </script>
+    <link rel="stylesheet" href="../maxStyle.css">
+    <script src="../common.js"></script>
+    <script src="script.js"></script>
+  </head> 
+  <body>
+
+    <!-- PART TWO -->
+    <div id="part2" data-role="page" data-theme="b">
+      <div data-role="header" data-theme="b">
+	<p class="label">Part 2</p>
+	<div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="../part1/" data-rel="back" rel="external"
+		   data-transition="slide" rel="external">
+		Back</a></li>
+            <li><a href="../" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+      </div><!-- /header -->
+
+      
+      <div data-role="content" data-theme="b">
+	
+	<p>(2) How much does energy cost you yearly? (Fill out both
+	    parts.)</p>
+
+	<p>
+	    <label for="secondValue1">How much electrical energy do you
+	          use? (in kWh a year)</label>
+	      <input type="number" id="secondValue1">
+	      </p>
+
+	<p>
+	    <label for="secondValue2">How much do you pay for such energy?
+	          ($ per kWh)</label>
+	      <input type="number"  id="secondValue2">
+	      </p>
+
+	<p>(Note that an average American household uses 10,900 kWh of
+	    electricity each year.)</p>
+	
+	<p><a id="submit2" data-transition="pop" href="../errors/error2.html"
+	            data-rel="dialog" data-role="button" data-theme="b">
+	          Calculate!</a></p>
+      </div><!-- /content -->
+
+      <div data-role="footer" data-theme="b">
+	<div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="../part1/" data-rel="back" rel="external"
+		   data-transition="slide">Back</a></li>
+            <li><a href="../" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+	<p  class="label">by Peter Schwartzman and MGC</p>
+      </div>
+      
+    </div><!-- end of page -->
+    
+    <!-- the result section -->
+    <div class="results" id="result2" data-role="page" data-theme="b">
+      <div data-role="header" data-theme="b">
+	<p class="label">Part 2 Results</p>
+	<div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="#part2" data-rel="back" data-transition="slide">
+		Back</a></li>
+            <li><a href="../" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+      </div><!-- /header -->
+      
+      <div data-role="content" data-theme="b">
+
+	<p>
+	    Results:<br>
+	      (explanation below)
+	    </p>
+
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	    <li>Energy Usage (kWh)</li>
+	      <li><span id="2a"></span></li>
+	      </ul>
+	
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	    <li>Cost ($/kWh)</li>
+	      <li><span id="2b"></span></li>
+	      </ul>
+	
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	    <li>Annual Energy Expense</li>
+	      <li><span id="2c"></span></li>
+	      </ul>
+	
+	<p>
+	    So, the <span id="debrief2a"></span> kWh that you use (at
+	      $<span id="debrief2b"></span>/kWh) costs you
+	      $<span id="debrief2c"></span>.
+	    </p>
+
+      <p><a data-role="button" href="../part3/" rel="external">Next</a></p>
+
+      </div><!-- end of content -->
+      
+      <div data-role="footer" data-theme="b">
+	<div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="#part2" data-rel="back" data-transition="slide">
+		Back</a></li>
+            <li><a href="../" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+	<p  class="label">by Peter Schwartzman and MGC</p>
+      </div>
+    </div><!-- end of page -->
+
+  </body>
+</html>

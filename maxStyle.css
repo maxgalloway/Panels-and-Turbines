@@ -1,0 +1,10 @@
+/*
+This file is my own defined styles on top of jQuery Mobile's vast
+library. For now, the only addition is to center some text used in
+headers and footers.
+*/
+
+.label
+{
+    text-align: center;
+}

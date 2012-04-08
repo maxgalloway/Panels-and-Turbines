@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<!--
+This sustainable energy calculator was a collaboration between
+professor of Environmental Studies at Knox College, and Maxwell
+Galloway-Carson, a former CS student at that institution.
+
+This is the home page. It has a brief description of the application,
+and can navigate anywhere within.
+-->
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Panels and Turbines</title> 
+
+    <!--set the page width to that of the device for mobile compatibility-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <!-- these first few linked files in each page are for jQuery Mobile-->
+    <link rel="stylesheet" 
+      href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css">
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script 
+       src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js">
+    </script>
+
+    <!--then, I add my own css and js files (where applicable)-->
+    <link rel="stylesheet" href="maxStyle.css">
+  </head> 
+  <body>
+    <!-- HOME -->
+    <div id="home" data-role="page" data-theme="b">
+      
+      <div data-role="header" data-theme="b">
+	<p class="label">Panels and Turbines</p>
+      </div>
+      
+      <div data-role="content" data-theme="b">
+	
+	<p>
+	  This calculator will connect power & energy units in a
+	  meaningful way. There are five parts, that logically build
+	  towards informing you on your decision to buy solar panels
+	  or wind turbines.
+	</p>
+	
+	<p><a href="part1/" data-role="button" data-theme="b"
+	      rel="external">Start</a></p>
+
+	<p>Or, jump to a section.</p>
+
+	<div class="content-primary">
+	  
+	  <ul data-role="listview" data-theme="b">
+	    <li><a href="part1/" rel="external">Energy Usage</a></li>
+	    <li><a href="part2/" rel="external">Energy Cost</a></li>
+	    <li><a href="part3/" rel="external">How many turbines?</a></li>
+	    <li><a href="part4/" rel="external">Panel Effectiveness</a></li>
+	    <li><a href="part5/" rel="external">Turbine Effectiveness</a></li>
+	  </ul>
+	  
+	</div><!--/content-primary -->
+      </div><!-- /content -->
+      
+      <div data-role="footer" data-theme="b">
+	<p class="label">by Peter Schwartzman and MGC</p>
+      </div>
+      
+      
+    </div><!-- /page -->
+
+  </body>
+</html>
