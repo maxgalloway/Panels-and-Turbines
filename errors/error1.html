@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<!-- 
+This error is triggered only in the first part, and has a slightly
+different error text than the other error. In part1, the user need
+only fill in one field. In all other parts, all fields must be filled
+in.
+
+This file is part of Panels and Turbines
+Copyright (C) 2012  Peter Schwartzman and Max Galloway-Carson
+
+Panels and Turbines is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+email me at: maxvgc@gmail.com
+-->
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Panels and Turbines</title> 
+
+    <link rel="stylesheet" 
+	  href="//code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css">
+    <script src="//code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+    </script>
+    
+    <link rel="stylesheet" href="../maxStyle.css">
+  </head> 
+  <body>
+
+  <!-- ERROR 1 -->
+  <div data-role="page" id="error1" data-theme="e">
+    <div data-role="header">
+      <p class="label">Error!</p>
+    </div>
+    <div data-role="content" data-theme="e">
+      <p>
+	There was an error processing your input. Make sure that you
+	have an answer only for the question above the button you
+	pressed. Make sure your answer is a number. Numbers can only
+	contain digits or decimals. (e.g. no $ or ,)
+      </p>
+    </div><!-- end content -->
+  </div><!-- end page-->
+  <!-- /ERROR 1-->
+
+  </body>
+</html>

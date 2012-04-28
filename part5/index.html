@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<!-- a note to improve readability: all empty spans in the result
+portion are filled in dynamically by a function in script.js 
+
+This file is part of Panels and Turbines
+Copyright (C) 2012  Peter Schwartzman and Max Galloway-Carson
+
+Panels and Turbines is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+email me at: maxvgc@gmail.com
+-->
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Panels and Turbines</title> 
+
+    <link rel="stylesheet"
+          href="//code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css">
+    <script src="//code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+    </script>
+
+    <link rel="stylesheet" href="../maxStyle.css">
+    <script src="../common.js"></script>
+    <script src="script.js"></script>
+  </head> 
+  <body>
+
+    <div id="part5" data-role="page" data-theme="b">
+      <div data-role="header" data-theme="b">
+        <p class="label">Part 5</p>
+        <div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="../part4/index.html" data-rel="back" data-transition="slide"
+                   rel="external">Back</a></li>
+            <li><a href="../index.html" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+      </div><!-- /header -->
+      
+      <div data-role="content" data-theme="b">
+	
+	<p>
+	  (5) How much electrical energy should you expect to get from
+	  wind turbines?
+	</p>
+	
+	<p>
+	  <label for="value5a">How many turbines are going to be put
+	    up?</label>
+	  <input type="number" id="value5a" class="part5">
+	</p>
+	
+	<p>
+	  <label for="value5b">What is the wattage (in kW) of the
+	    turbine(s)?</label>
+	  <input type="number" id="value5b" class="part5">
+	</p>
+	
+	<p>
+	  <label for="value5c">What is the efficiency of the
+	    turbine(s) given the wind profiles at the location?</label>
+	  <input type="number" id="value5c" class="part5">
+	</p>
+	
+        <p><a id="submit5" data-transition="pop" href="../errors/error2.html"
+	      data-rel="dialog" data-role="button"
+	      data-them="b"> Calculate!</a></p>
+      </div><!-- end of content -->
+      
+      <div data-role="footer" data-theme="b">
+        <div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="../part4/index.html" data-rel="back" data-transition="slide"
+                   rel="external">Back</a></li>
+            <li><a href="../index.html" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+	<p  class="label">by Peter Schwartzman and MGC</p>
+        <div data-role="navbar" data-theme="b"><ul>
+            <li><a href="https://github.com/maxvgc/Panels-and-Turbines.git"
+                   data-role="button" data-theme="b" rel="external">
+                View the Source Code</a></li>
+          </ul></div><!-- /source code navbar-->
+      </div>
+      
+    </div><!-- end of page -->
+    
+    <div id="results5" data-role="page" data-theme="b">
+      <div data-role="header" data-theme="b">
+        <p class="label">Part 5 Results</p>
+        <div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="#part5" data-rel="back" data-transition="slide">
+                Back</a></li>
+            <li><a href="../index.html" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+      </div><!-- /header -->
+      
+      <div data-role="content" data-theme="b">
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	  <li># of Turbines</li>
+	  <li><span id="5a"></span></li>
+	</ul>
+	
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	    <li>Wattage (kW)</li>
+	    <li><span id="5b"></span></li>
+	</ul>
+	
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	  <li>Efficiency</li>
+	  <li><span id="5c"></span></li>
+	</ul>
+	
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	  <li>Energy Produced (kWh)</li>
+	  <li><span id="5d"></span></li>
+	</ul>
+	
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	  <li># of Homes</li>
+	  <li><span id="5e"></span></li>
+	</ul>
+	
+	<p>
+	    So, this number (<span id="debrief5a"></span>) of
+	    <span id="debrief5b"></span>kW turbines, working with an
+	    efficiency of <span id="debrief5c"></span>, should
+	    produce <span id="debrief5e"></span> kWh of energy each
+	    year.
+	</p>
+	
+	<p>
+	  For comparison, the average American household uses 10,900
+	  kWh of electrical energy each year. So these turbine(s)
+	  would be producing the equivalent
+	  of <span id="debrief5e"></span> households' electricity
+	  needs.
+	</p>
+	
+      </div><!-- end of content -->
+      
+      <p><a data-role="button" href="../index.html">The End.</a></p>
+      
+      <div data-role="footer" data-theme="b">
+        <div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="#part5" data-rel="back" data-transition="slide">
+                Back</a></li>
+            <li><a href="../index.html" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+	<p  class="label">by Peter Schwartzman and MGC</p>
+        <div data-role="navbar" data-theme="b"><ul>
+            <li><a href="https://github.com/maxvgc/Panels-and-Turbines.git"
+                   data-role="button" data-theme="b" rel="external">
+                View the Source Code</a></li>
+          </ul></div><!-- /source code navbar-->
+      </div>
+      
+    </div><!-- end of page -->
+    
+  </body>
+</html>

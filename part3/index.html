@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<!-- a note to improve readability: all empty spans in the result
+portion are filled in dynamically by a function in script.js 
+
+This file is part of Panels and Turbines
+Copyright (C) 2012  Peter Schwartzman and Max Galloway-Carson
+
+Panels and Turbines is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+email me at: maxvgc@gmail.com
+-->
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Panels and Turbines</title> 
+
+    <link rel="stylesheet"
+          href="//code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css">
+    <script src="//code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+    </script>
+
+    <link rel="stylesheet" href="../maxStyle.css">
+    <script src="../common.js"></script>
+    <script src="script.js"></script>
+  </head> 
+  <body>
+
+    <!-- PART THREE -->
+    <div id="part3" data-role="page" data-theme="b">
+      <div data-role="header" data-theme="b">
+	<p class="label">Part 3</p>
+	<div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="../part2/index.html" data-rel="back" data-transition="slide"
+		rel="back">Back</a></li>
+            <li><a href="../index.html" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+      </div><!-- /header -->
+      
+      <div data-role="content" data-theme="b">
+	
+	
+	
+	<p>
+	  (3) How many solar panels or wind turbines does your home
+	  (or city) need?
+	</p>
+	
+	<label for="thirdValue1">How many people live in your
+	  home/city? </label>
+	<input type="number" id="thirdValue1">
+	
+	
+	<p><a id="submit3" data-transition="pop" href="../errors/error2.html"
+	      data-rel="dialog" data-role="button" data-them="b">
+	    Calculate!</a></p>
+      </div><!-- /content -->
+      
+      <div data-role="footer" data-theme="b">
+	<div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="../part2/index.html" data-rel="back" data-transition="slide"
+		   rel="back">Back</a></li>
+            <li><a href="../index.html" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+	<p  class="label">by Peter Schwartzman and MGC</p>
+	
+        <div data-role="navbar" data-theme="b"><ul>
+            <li><a href="https://github.com/maxvgc/Panels-and-Turbines.git"
+                   data-role="button" data-theme="b" rel="external">
+                View the Source Code</a></li>
+          </ul></div><!-- /source code navbar-->
+      </div>
+      
+    </div><!-- end of page -->
+    
+    
+    <div id="result3" data-role="page" data-theme="b">
+      <div data-role="header" data-theme="b">
+        <p class="label">Part 3 Results</p>
+        <div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="#part3" data-rel="back" data-transition="slide">
+                Back</a></li>
+            <li><a href="../index.html" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+      </div><!-- /header -->
+      
+      <div data-role="content" data-theme="b">      
+	<p>
+	  Results:<br>
+	  (explanation below)
+	</p>
+	
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	  <li>Population</li>
+	  <li><span id="3a"></span></li>
+	</ul>
+	
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	  <li>Energy Usage (kWh)</li>
+	  <li><span id="3b"></span></li>
+	</ul>
+	
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	  <li>Solar Panel coverage, <span id="acresSqua"></span></li>
+	  <li><span id="3c"></span></li>
+	</ul>
+	
+	<ul data-role="listview" data-theme="b" data-inset="true">
+	  <li># of Wind Turbines required (1.6 MW each)</li>
+	  <li><span id="3d"></span></li>
+	</ul>
+	
+	<p>
+	  Your home's/city's <span id="debrief3a"></span> people
+	  need <span id="debrief3b"></span> <span id="3squa"></span>
+	  (or <span id="debrief3c"></span> <span id="3acres"></span>)
+	  of PV panels or <span id="debrief3d"></span> wind turbines
+	  to supply all its electricity.
+	</p>
+	
+	<p>
+	  Note #1: This takes into
+	  account residential electricity only.
+	  
+	  <br>
+	  
+	  Note #2: This assumes 1,100
+	  kWh/m2 annual energy production for PV panels, and 1.6 MW
+	  turbines with 35% efficiency.
+	  
+	  <br>
+	  
+	  Note #3: Since consistent sun
+	  and wind resources are not available year round at all
+	  locations, it is advisable that a mix of the two sources
+	  would be most desirable.
+	</p>
+	
+	<p><a data-role="button" href="../part4/" rel="external">Next</a></p>
+	
+      </div><!-- end of content -->
+      
+      <div data-role="footer" data-theme="b">
+        <div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="#part3" data-rel="back" data-transition="slide">
+                Back</a></li>
+            <li><a href="../index.html" data-transition="flip">Home</a></li>
+          </ul>
+        </div><!-- /navbar -->
+	<p  class="label">by Peter Schwartzman and MGC</p>
+        <div data-role="navbar" data-theme="b"><ul>
+            <li><a href="https://github.com/maxvgc/Panels-and-Turbines.git"
+                   data-role="button" data-theme="b" rel="external">
+                View the Source Code</a></li>
+          </ul></div><!-- /source code navbar-->
+      </div>
+      
+    </div><!-- end of page -->
+    
+  </body>
+</html>
