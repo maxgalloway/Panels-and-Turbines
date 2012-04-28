@@ -84,15 +84,11 @@ limitations under the License.
 
       <div data-role="footer" data-theme="b">
 
+	<p><a href="https://github.com/maxvgc/Panels-and-Turbines.git" 
+	      data-role="button" data-theme="b" rel="external">
+	    View the Source Code</a></p>
+
 	<p class="label">by Peter Schwartzman and MGC</p>
-
-        <div data-role="navbar" data-theme="b"><ul>
-            <li><a href="https://github.com/maxvgc/Panels-and-Turbines.git"
-                   data-role="button" data-theme="b" rel="external">
-                View the Source Code</a></li>
-          </ul></div><!-- /source code navbar-->
-
-
       </div>
       
       
