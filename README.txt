@@ -1,3 +1,5 @@
+demo: see this app in action at http://maxvgc.com/Projects/calc/
+
 This sustainable energy calculator was a collaboration between
 professor of Environmental Studies at Knox College, and Maxwell
 Galloway-Carson, a former CS student at that institution.
