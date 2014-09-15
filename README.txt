@@ -1,4 +1,4 @@
-demo: see this app in action at http://maxvgc.com/Projects/calc/
+demo: see this app in action at https://maxvgc.github.io/Panels-and-Turbines
 
 This sustainable energy calculator was a collaboration between
 professor of Environmental Studies at Knox College, and Maxwell
