@@ -1,8 +1,8 @@
-demo: see this app in action at https://maxvgc.github.io/Panels-and-Turbines
+demo: see this app in action at http://panels.pwipw.com
 
 This sustainable energy calculator was a collaboration between
-professor of Environmental Studies at Knox College, and Maxwell
-Galloway-Carson, a former CS student at that institution.
+professor of Environmental Studies at Knox College, and Max
+Galloway, a former CS student at that institution.
 
 There are five parts, leading from considering your energy usage, to
 the benefits of solar panels and wind turbines. Each part is composed
@@ -16,7 +16,7 @@ jQuery/javascript. jQuery Mobile is responsible for the application's
 look & feel, as well as ajax page transitions.
 
 This file is part of Panels and Turbines
-Copyright (C) 2012  Peter Schwartzman and Max Galloway-Carson
+Copyright (C) 2016 Max Galloway webmaster@pwipw.com
 
 Panels and Turbines is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -30,5 +30,3 @@ GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-email me at: maxvgc@gmail.com

@@ -3,7 +3,7 @@
    the application
 
 This file is part of Panels and Turbines
-Copyright (C) 2012  Peter Schwartzman and Max Galloway-Carson
+Copyright (C) 2016  Max Galloway webmaster@pwipw.com
 
 Panels and Turbines is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -17,8 +17,6 @@ GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-email me at: maxvgc@gmail.com
 */
 
 // this constant denotes the number of kWh used by an 
